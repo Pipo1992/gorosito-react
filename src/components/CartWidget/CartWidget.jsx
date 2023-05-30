@@ -8,7 +8,7 @@ const CardWidget = () => {
     return (
         <div className="cartWidgetDisplay">
             <img src={carrito} alt="logoCarrito" width="30px" height="30px" />
-            {products.length !== 0 && (<p>{products.length}</p>)}
+            <p>{products.length !== 0 ? (products.length) : (0)}</p>
         </div>
     );
 };
