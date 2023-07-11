@@ -1,0 +1,123 @@
+footer {
+    background-color: blue;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+
+    h3 {
+        color: rgb(0, 0, 0);
+        font-size: 120%;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+            font-size: 14px;
+
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.social-icons-column {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+
+    li {
+        margin-right: 10px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+
+            .icon {
+                font-size: 24px;
+            }
+
+            &:hover {
+                color: black;
+
+                .fa-whatsapp {
+                    color: green;
+                }
+
+                .fa-instagram {
+                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    background-clip: text;
+                    border-radius: 20%;
+                }
+
+                .fa-twitter {
+                    color: #1da1f2;
+                }
+
+                .fa-facebook {
+                    color: #1877f2;
+                }
+            }
+        }
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        padding: 10px;
+    }
+
+    .social-icons-column {
+        justify-content: center;
+    }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .social-icons-column {
+        align-items: flex-start;
+
+    }
+}
